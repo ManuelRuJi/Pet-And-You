@@ -1,0 +1,178 @@
+*{/*Aqui eliminamos el padding y margin por defecto*/
+    padding: 0; 
+    margin: 0;
+}
+body{/*Eliminamos un margin y ponemos el fondo*/
+    margin: 0;
+    background: url(../resource/Imagenes/fondo.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+* hr{/*le damos formato a la etiqueta hr*/
+    width: 65%;
+    margin-left: 17%;
+    border-color: gray;
+}
+@font-face {
+    font-family: 'Cabin Sketch';
+    src: url(resource/Fort-Family/Cabin_Sketch/CabinSketch-Regular.ttf);
+}
+
+/*Ediciones del Header*/
+header{/*Ponemos fondo y posicionamos*/
+    background: url(../resource/Imagenes/banner.png);
+    position: relative;
+    width: 100%;
+    margin-top: 0%;
+    text-align: center;
+    padding-bottom: 9px;
+}
+.titulo{ /*Le damos formato al nombre de la empresa que esta en un h1*/
+    font-family: 'Cabin Sketch', sans-serif;
+    color: white;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+
+
+/*Ediciones del Nav*/
+nav{ /*Posicionasmos*/
+    position: relative;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+/*Los siguientes bloques del Nav son para colocarlo horizontalmente y ademas que se despliegen los submenus*/
+nav a{ 
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+}          
+nav li{/*Como mucho decir que este le da formato como puede ser el fondo*/
+    display:inline-block;
+    width:150px;
+    height:25px;
+    padding: 2px 8px;
+    background-image: radial-gradient(darkgrey,lightpink);
+    border:1px solid grey;
+    border-radius: 10px;
+    text-align:center;
+    color:black;
+    position:relative;
+}
+nav li:hover{
+    background-image: radial-gradient(darksalmon,lightpink,darkgrey);
+    color:black;
+    text-decoration: underline black;
+    font-weight: bolder;
+}          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+
+/*Ediciones del Main*/
+main{ /*Posicionamos*/
+    width: 80%;
+    padding-bottom: 5%;
+}
+main section{/*Le damos formato a los section y los centramos en el main*/
+    text-align: center;
+    border: 2px dotted black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(245, 222, 178, 0.918);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+article.imagen img{/*formato por defecto de imagenes*/
+    height: 150px;
+}
+article.texto p{ /*Ponemos margenes al principio y al final de los p*/
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*Los dos siguientes bloques son para darle una pequeña animacion que haga que el h2 cambie de color*/
+main section h2{
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+main section:hover h2{
+    color: yellowgreen;
+}
+
+/*hacemos que el video sea responsive*/
+.video iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 80%;
+}
+
+
+/*Ediciones del Aside*/
+aside{/*Posicionamos*/
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+/*Los dos siguientes bloques son para darle una pequeña animacion que haga que el h3 cambie de color*/
+aside section h3{
+    color: yellowgreen;
+}
+aside section h3:hover{
+    color: chartreuse;
+}
+/*Le damos formato a los enlaces*/
+aside a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 2px;
+}
+/*Cuando estemos sobre un enlace se pondra en negrita*/
+aside a:hover{
+    font-weight: bold;
+}
+
+aside section article{/*Le damos formato a los article del aside*/
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(245, 222, 178, 0.918);
+    border-radius: 10px;
+    border: dashed 1px;
+}
+
+/*Ediciones del Footer*/
+footer{/*Posicionamos y le damos un pequeño formato de al texto*/
+    width: 100%;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Animacion en los iconos de redes sociales que hace que giren*/
+.icono{
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 1.15s ease-in-out;
+            transition:         transform 1.15s ease-in-out;
+  }
+.icono:hover {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+}
