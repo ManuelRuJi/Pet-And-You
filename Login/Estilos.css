@@ -1,0 +1,207 @@
+*{/*Aqui eliminamos el padding y margin por defecto*/
+    padding: 0; 
+    margin: 0;
+}
+body{/*Eliminamos un margin y ponemos el fondo*/
+    margin: 0;
+    background: url(Imagenes/fondo.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+* hr{/*le damos formato a la etiqueta hr*/
+    width: 65%;
+    margin-left: 17%;
+    border-color: gray;
+}
+@font-face {
+    font-family: 'Cabin Sketch';
+    src: url(resource/Fort-Family/Cabin_Sketch/CabinSketch-Regular.ttf);
+}
+
+
+/*Ediciones del Header*/
+header{/*Ponemos fondo y posicionamos*/
+    background: url(Imagenes/banner.png);
+    position: relative;
+    width: 100%;
+    margin-top: 0%;
+    text-align: center;
+    padding-bottom: 9px;
+}
+.titulo{ /*Le damos formato al nombre de la empresa que esta en un h1*/
+    font-family: 'Cabin Sketch', sans-serif;
+    color: white;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+/*Ediciones del Nav*/
+nav{ /*Posicionasmos*/
+    position: relative;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+/*Los siguientes bloques del Nav son para colocarlo horizontalmente y ademas que se despliegen los submenus*/
+nav a{ 
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+}          
+nav li{/*Como mucho decir que este le da formato como puede ser el fondo*/
+    display:inline-block;
+    width:150px;
+    height:25px;
+    padding: 2px 8px;
+    background-image: radial-gradient(darkgrey,lightpink);
+    border:1px solid grey;
+    border-radius: 10px;
+    text-align:center;
+    color:black;
+    position:relative;
+}
+nav li:hover{
+    background-image: radial-gradient(darksalmon,lightpink,darkgrey);
+    color:black;
+    text-decoration: underline black;
+    font-weight: bolder;
+}          
+nav li>ul{
+    display:none;
+    }
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+}
+
+
+/*Ediciones del Main*/
+main{ /*Posicionamos*/
+    width: 100%;
+    padding-bottom: 5%;
+}
+main section{/*Le damos formato a los section y los centramos en el main*/
+    text-align: center;
+    border: 2px dotted black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(245, 222, 178, 0.918);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Los dos siguientes bloques son para darle una pequeña animacion que haga que el h2 cambie de color*/
+main section h2{
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+main section:hover h2{
+    color: yellowgreen;
+}
+
+
+
+/*Ediciones del Footer*/
+footer{/*Posicionamos y le damos un pequeño formato de al texto*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Animacion en los iconos de redes sociales que hace que giren*/
+.icono{
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 1.15s ease-in-out;
+            transition:         transform 1.15s ease-in-out;
+  }
+.icono:hover {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+}
+
+/**/
+
+form {
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    border: 2px black solid;
+    box-shadow: gray 0px 5px 15px;
+    transition: 0.5s;
+}
+
+form:hover {
+    border: 2px yellowgreen solid;
+    box-shadow: yellowgreen 0px 5px 15px;
+}
+
+form *,form{
+    background-color: white;
+    min-height: .01%;
+    overflow-x: auto;
+}
+input{
+    width: 169px;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(249, 250, 250);
+    border: 1px solid rgb(181, 189, 196);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(8, 9, 10);
+    box-shadow: none;
+}
+input:focus{
+    box-shadow: yellowgreen 0px 5px 15px;
+    background-color: #fff;
+    border-color: yellowgreen;
+}
+form a{
+    color: black;
+    margin-left: 7px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+button{
+  appearance: button;
+  background-color: rgba(153, 205, 50, 0.603);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: .8px;
+  line-height: 20px;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  transition: 0.5s;
+  margin-right: 8px;
+}
+button:hover{
+    background-color: yellowgreen;
+}
