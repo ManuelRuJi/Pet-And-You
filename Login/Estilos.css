@@ -107,7 +107,7 @@ main section:hover h2{
 /*Ediciones del Footer*/
 footer{/*Posicionamos y le damos un pequeño formato de al texto*/
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color: black;
     text-align: center;
